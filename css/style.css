@@ -22,6 +22,10 @@ a:hover, a:active, a:focus { text-decoration: none; outline: none; }
 
 .templateux-navbar .toggle-menu { z-index: 9999; position: relative; top: -13px; display: none; }
 
+.spaceing{
+	height: 200px;
+}
+
 li .nav-small{
 	display: none;
 }
