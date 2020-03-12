@@ -70,16 +70,25 @@
         <div class="row justify-content-center">
           <div class="col-md-12">
             <div class="row work-detail"><!--progect brief-->
-              <div class="col-md-8 ">
+              <div class="col-md-6">
                 <span class=caption>Project Brief</span>
-                <p>Many Groupon users were struggling with finding a way to <strong>quickly evaluate deals</strong>. That’s because the high impact information like merchant name and location is hard to find; the complex option titles are hard to understand and easy to make the purchase mistake. In this case study, I was focus on addressing those problems.
-</p>
+                <p>Many Groupon users were struggling with finding a way to <strong>quickly evaluate deals</strong>. That’s because the high impact information like merchant name and location is hard to find. Above that, the complex option title can cause purchase mistakes easily. In this project, I was focused on addressing these two big pain points.</p>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-3">
+                <span class=caption>Team</span>
+                <ul>
+                  <li>1 Designer (Me)</li>
+                  <li>1 UX Resercher</li>
+                  <li>2 PMs</li>
+                  <li>Cross Platform Engineers</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
                 <span class=caption>Skills</span>
                 <ul>
-                  <li>UX Design</li>
+                  <li>UX</li>
                   <li>Visual Design</li>
+                  <li>User Research</li>
                   <li>Prototyping</li>
                 </ul>
               </div>
@@ -131,24 +140,6 @@
     </section>
 
 
-    <!-- *************************< Brainstorming >************************************ -->
-
-    <section class="parallax mc-bg1">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-12 parallax-header">
-            <h2><span>Brainstorm to get people on the same page</span></h2>
-          </div>
-          <div class="col-md-6">
-            <img src="images/dp-enhancement/offsite-img1.jpg" alt="Image placeholder" class="img-fluid">
-          </div>
-          <div class="col-md-6">
-            <img src="images/dp-enhancement/offsite-img2.jpg" alt="Image placeholder" class="img-fluid">
-          </div>
-      </div>
-    </section>
-
-
 
   <!-- ************************< (1)Merchant-centric >************************************* -->
 
@@ -166,7 +157,7 @@
               <ol>
                 <li><strong>Merchant name is hard to find at a glance</strong>, even though we show it at three different places.</li>
                 </br>
-                <li><strong>Too many repeated contents.</strong> The deal title and option title are referring to the same thing, it increases the user's cognitive load.</li>
+                <li><strong>Too many repeated contents.</strong> The deal title and option title are the same, it increases the user's cognitive load.</li>
                 </br>
                 <li><strong>Location is hard to access.</strong> Users have to scroll to the bottom of the page to find the map.</li>
                 <br/>
@@ -186,30 +177,66 @@
     </section>
 
 
-   <!-- ************************< Design Proposal >************************************* -->
+
+
+    <!-- ************************< (1)Merchant-centric >************************************* -->
 
     <section class="templateux-section">
       <div class="container">
         <div class="row">
           <div class="col-md-12 clearfix mb-5" data-aos="fade-up">
-            <h2>Design Proposal</h2>
-          </div>
-          <div class="col-md-6 clearfix" data-aos="fade-up">
-            <p><strong>(1) Merchant-centric Page Header</strong></p>
-            <p><span class="fas fa-user"></span> Users want to know: <strong>What's the merchant?</strong></p>
-            <p>From the past user study, we learned that users are looking for key merchant information(merchant name, location) to make the purchase decision. In the new design, I created a dedicated merchant card to group key merchant information together and had them on the top of the page. This merchant card also replaced the original deal title, which eliminated the repetition of the deal title and option title. </p>
-          </div>
-          <div class="col-md-6 clearfix" data-aos="fade-up">
-              <p><strong>(2) Conversational Urgency Message</strong></p>
-              <p><span class="fas fa-user"></span> Users want to know: <strong>How good is this deal?</strong></p>
-              <p>In order to promote the purchase, I also wanted to improve the social proof element on the deal page. The previous urgency message was static. It was easy to be ignored by the users and the message itself doesn’t sound attractive. In the new design, I worked with the content strategist to show the message in a conversational way and used animation to make it look more fun.</p>
-          </div>
+              <h2>Concept Testing</h2>
+            </div>
+            <div class="col-md-4 clearfix" data-aos="fade-up">
+              <p>After narrowing down the problem to two focuses: merchant info and location, I started to explore different page structures. There are two strongest concepts that stand out after a couple rounds of discussion with the team. At this point, I wanted to know which concept would work, so I had a <strong>usability test</strong> to figure it out.</p>
+              <br/>
+              <h5>Takeways</h5>
+              <ol>
+                <li>Merchant name</strong> helps users to understand the deal faster </li>
+                <li>Having location / map at the bottom isn’t ideal</li>
+                <li>Groupon users and non-Groupon users have different behavior</li>
+              </ol>
+            </div>
+            <div class="col-md-8 clearfix" data-aos="fade-up">
+              <img src="images/dp-enhancement/2concepts.png" alt="Image placeholder" class="img-fluid">
+            </div>
+        </div><!-- END row -->
+      </div>
+    </section>
+
+
+        <!-- ************************< (1)Merchant-centric >************************************* -->
+
+    <section class="templateux-section">
+      <div class="container">
+        <div class="row">
           <div class="col-md-12 clearfix mb-5" data-aos="fade-up">
+            <h2>Exploration: UI & Interactions</h2>
+            <p>After the usability testing, I received a strong signal that merchant-centric page title helps users understand the deal quicker, which is the concept 2 approach. However, the location issue still hadn’t been addressed in concept 2. So this round of UI exporation, I was focused on what’s the right UI treatment for introducing the entry point of the location. </p>
+
+            <p>The following were three versions: tabs, image carousel. (left to right)</p>
+          </div>
+          <div class="col-md-4 clearfix" data-aos="fade-up">
+            <img src="images/dp-enhancement/01_tab.gif" alt="Image placeholder" class="img-fluid">
+          </div>
+          <div class="col-md-4 clearfix" data-aos="fade-up">
+            <img src="images/dp-enhancement/02_image.gif" alt="Image placeholder" class="img-fluid">
+          </div>
+          <div class="col-md-4 clearfix" data-aos="fade-up">
+            <img src="images/dp-enhancement/03_card.gif" alt="Image placeholder" class="img-fluid">
+          </div>
+          <div class="col-md-12 clearfix mb-5" data-aos="fade-up" style="margin-top: 50px;">
+            <p>I first ran an a/b testing on the Tabs version, and then noticed that not many people were interacting with the tabs. So I came up with an aggressive version which inserted the location map in the image carousel. However, I didn’t go with this version because I thought it may hurt the conversion considering image quality is highly correlated to the conversion based on a past testing. At the end, I landed on the card version because it has better grouping and visibility.</p>
+          </div>
+          <div class="col-md-12 clearfix mb-5" data-aos="fade-up" style="margin-top: 50px;">
+            <h4>Interaction Breakdown</h4>
             <img src="images/dp-enhancement/mc-design.png" alt="Image placeholder" class="img-fluid">
           </div>
         </div><!-- END row -->
       </div>
     </section>
+
+
 
   <!-- *************************< Result >************************************ -->
 
@@ -217,12 +244,12 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-4">
-              <h3>Before</h3>
+              <h4>Before</h4>
               <br/>
               <img src="images/dp-enhancement/before.jpg" alt="Image placeholder" class="img-fluid">
           </div>
           <div class="col-md-4">
-              <h3>MVP (launched)</h3>
+              <h4>MVP (launched)</h4>
               <br/>
               <video controls autoplay muted loop>
                 <source src="images/dp-enhancement/mvp.mp4" type="video/mp4">
@@ -230,7 +257,7 @@
               </video>
           </div>
           <div class="col-md-4">
-              <h3>Northstar</h3>
+              <h4>Northstar</h4>
               <br/>
               <video controls autoplay muted loop>
                 <source src="images/dp-enhancement/pototype-merchant-centric.mp4" type="video/mp4">
